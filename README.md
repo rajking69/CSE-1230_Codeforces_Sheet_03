@@ -1,1 +1,0 @@
-# rajking69--CSE-1230_Codeforces_Sheet_03_Beginner-C-rajking69-rajking69--CSE-1230_Codeforces_Sheet_01
