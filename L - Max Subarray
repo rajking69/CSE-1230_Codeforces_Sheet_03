@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int tcase,size,arr[100],i,Max=0;
+    cin>>tcase;
+    while(tcase--)
+    {
+        cin>>size;
+        for(i=0; i<size; i++)
+        {
+            cin>>arr[i];
+            cout<<arr[i]<<" ";
+        }
+        int i=0,z=0;
+        while(true)
+        {
+            if(z==size-1)
+                break;
+            if(i==z)
+            {
+                Max=max(arr[i],arr[i+1]);
+            }
+            else
+            {
+                Max=max(Max,arr[i+1]);
+            }
+            cout<<Max<<" ";
+            i++;
+            if(i==size-1)
+            {
+                z++;
+                i=z;
+            }
+        }
+        cout<<endl;
+    }
+    return 0;
+}
