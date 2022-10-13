@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+ 
+{
+    long long int N,n1,sum=0,i,num;
+    scanf("%lld",&N);
+    for(i=0; i<N; i++)
+    {
+        scanf("%lld",&num);
+        sum=sum+num;
+        n1=abs(sum);
+ 
+    }
+    printf("%lld\n",n1);
+    return 0;
+}
