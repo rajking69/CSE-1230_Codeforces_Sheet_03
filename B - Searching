@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int n,arr[100000],i,X,count=0,position=0;
+    scanf("%d",&n);
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&X);
+    for(i=0; i<n; i++)
+    {
+        if(X==arr[i])
+        {
+            count++;
+            position=i;
+            break;
+        }
+    }
+    if(count==1)
+        printf("%d\n",position);
+    else
+        printf("-1\n");
+
+    return 0;
+}
