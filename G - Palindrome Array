@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int N,arr1[99999]= {},arr2[99999]= {},i,count=0,j=0;
+    scanf("%d",&N);
+    for(i=0; i<N; i++)
+    {
+        scanf("%d",&arr1[i]);
+        j++;
+        arr2[(N-1)-i]=arr1[i];
+    }
+    for(i=0; i<N; i++)
+    {
+        if(arr1[i]==arr2[i])
+            count++;
+    }
+    if(count==j)
+        printf("YES\n");
+    else
+        printf("NO\n");
+    return 0;
+}
