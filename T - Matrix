@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    long long int row,col,n,mat[100][100];
+    long long int mainsum=0,secsum=0,total=0;
+    scanf("%lld",&n);
+    for(row=0; row<n; row++)
+    {
+        for(col=0; col<n; col++)
+        {
+            scanf("%lld",&mat[row][col]);
+        }
+    }
+    for(row=0; row<n; row++)
+    {
+        mainsum=mainsum+mat[row][row];
+        secsum=secsum+mat[row][(n-1)-row];
+    }
+    total=abs(mainsum-secsum);
+    printf("%lld\n",total);
+
+    return 0;
+}
